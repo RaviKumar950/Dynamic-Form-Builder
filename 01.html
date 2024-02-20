@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment-1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(to right, #4b79a1, #283e51);
+        display: grid;
+        place-items: center;
+      }
+      div {
+        width: 50%;
+        aspect-ratio: 1/1;
+        margin-top: 50px;
+        border: 5px ridge gray;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.5) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        background-image: linear-gradient(to right, #355c7d, #c06c84, #355c7d);
+        opacity: 0.9;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        padding: 10px;
+        margin-top: 15px;
+      }
+      form{
+        padding-left: 80px;
+        padding-top: 50px;
+        font-size: 1.2rem;
+      }
+      .label {
+         text-align: center; 
+        color: white;
+        text-shadow: 2px 2px 4px #71a2e1;
+        padding: 2px;
+        margin-top: 10px;
+        border-radius: 8px;
+      }
+       input{
+        padding: 3px;
+        margin-top: 10px;
+        border-radius: 8px;
+        border: 2px solid #71a2e1;
+        background-image: linear-gradient(to right, #355c7d, #c06c84, #355c7d);
+
+      } 
+      p {
+        /* text-align: center; */
+        color: white;
+        text-shadow: 2px 2px 4px #71a2e1;
+        padding: 2px;
+        margin-top: 10px;
+        border-radius: 8px;
+        
+      }
+       textarea { 
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        border: 2px solid #71a2e1; 
+        background-image: linear-gradient(to right, #355c7d, #c06c84, #355c7d);
+
+      } 
+      #radio {
+        margin-left: 20px;    
+        text-shadow: 2px 2px 4px #71a2e1;
+        padding: 2px;
+        margin-top: 10px;
+        border-radius: 8px;
+      
+      }
+      #tell {
+        /* text-align: center; */
+        color: white;
+        text-shadow: 2px 2px 4px #71a2e1;
+        padding: 12px;
+        margin-bottom: 800px;
+        border-radius: 8px;
+      }
+      select {
+        /* color: white; */
+        text-shadow: 2px 2px 4px #71a2e1;
+        padding: 2px;
+        margin-top: 10px;
+        border-radius: 8px;
+        background-image: linear-gradient(to right, #355c7d, #c06c84, #355c7d);
+
+      }
+      option {
+        /* color: white; */
+        text-shadow: 2px 2px 4px #71a2e1;
+        padding: 2px;
+        margin-top: 10px;
+        border-radius: 8px;
+        background-image: linear-gradient(to right, #355c7d, #c06c84, #355c7d);
+      }
+      .button {
+        padding: 8px;
+        margin-top: 10px;
+        margin: 10px;
+        border-radius: 8px;
+        border: 2px solid #71a2e1;
+        background-image: linear-gradient(to right, #355c7d, #c06c84, #355c7d);
+        color: white;
+        text-shadow: 2px 2px 4px #71a2e1;
+        font-size: 1.2rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.5) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+      }
+        
+    
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1><ins>STUDENT ENQUIRY FORM</ins></h1>
+      <form action="./02.html" method="get">
+        <label for="enquiry" id="enquiry-Code" class="label">Enquiry-Code:-</label>
+        <input type="text" /><br />
+        <label for="enquiry" class="label">Name:-</label>
+        <input type="text" /><br />
+        <label for="enquiry" class="label">Age:-</label>
+        <input type="text" /><br />
+        <p>        Qualification:-
+        <select name="" id="">
+          <option value="">Select Course</option>
+          <option value="">Post-Graduate</option>
+          <option value="">B.Tech</option>
+          <option value="">M.Tech</option>
+          <option value="">MBA</option>
+          <option value="">BCA</option>
+          <option value="">MCA</option>
+        </select>
+        </p>
+        <br />
+        <p>Purpose of Taking Admission <br>
+        <input type="radio" name="purpose" id="radio" />Carrer<br />
+        <input type="radio" name="purpose" id="radio" />Knowledge </p> <br />
+        <label for="story" id="tell">Tell us your Enquiry:</label><br>
+        <textarea id="story" name="story" rows="5" cols="33">
+write here about your enquiry...
+        </textarea>
+        <p>Course in which take Admission<br>
+        <input type="radio" name="purpose" id="radio" />JAVA<br />
+        <input type="radio" name="purpose" id="radio" />.NET <br />
+        <input type="radio" name="purpose" id="radio" />PHP </p> <br />
+        <input type="submit" value="Submit" class="button"/>
+        <input type="reset" class="button">
+      </form>
+    </div>
+  </body>
+</html>
